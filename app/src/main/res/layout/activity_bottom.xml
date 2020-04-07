@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".BottomActivity">
+
+    <!--<TextView-->
+        <!--android:id="@+id/message"-->
+        <!--android:layout_width="226dp"-->
+        <!--android:layout_height="19dp"-->
+        <!--android:layout_marginLeft="@dimen/activity_horizontal_margin"-->
+        <!--android:layout_marginTop="@dimen/activity_vertical_margin"-->
+        <!--android:text="@string/title_home"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-88dp">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="200dp"
+            android:text="Student Attendence"
+            android:layout_centerHorizontal="true"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="116dp"
+            tools:layout_editor_absoluteY="51dp" />
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/sir"
+            android:layout_marginBottom="400dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="107dp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="404dp"
+            android:layout_height="140dp"
+           android:layout_alignBottom="@+id/imageView2"
+          android:layout_marginTop="500dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="-190dp"
+            android:onClick="map"
+            app:srcCompat="@drawable/map1"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="283dp" />
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="412dp"
+            android:layout_height="165dp"
+            android:layout_alignBottom="@+id/imageView3"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="-165dp"
+            android:onClick="chrome"
+            app:srcCompat="@drawable/google"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="283dp" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
